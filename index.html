@@ -2,17 +2,68 @@
 <html>
   <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width,
-    initial-scale=1.0 />
-    <meta
-      name="description"
-      content="A portal for managing student transfers between schools in 2025."
-    />
+    initial-scale=1.0" name="description"
+          keywords="student transfer, school transfer, 2025"
+          lang="en"
+      content="A portal for managing student transfers between schools in 2025."/>
+    <meta name="author" content="Student Transfer Portal Team"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>Student Transfer Portal 2025</title>
-    <link rel="stylesheet" href="styles.css"/ >
+    <link rel="stylesheet" href="styles.css"/>
   </head>
   <body>
     <header>
       <h1>Welcome to the Student Transfer Portal</h1>
-    </header>
+      <h2>
+        Explanation of the transfer process and how to use this portal
+      </h2> 
+      </header>
+      <div class="main_content">
+        <fieldset class="outerFieldset">
+        <form>
+
+          <p>Start your transfer process</p>
+
+          <span>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required />
+          </span>
+
+          <span>
+            <label for=""firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" />
+          </span>
+
+          <span>
+            <label for="currentSchool">Current School:</label>
+            <input type="text" id="currentSchool" name="currentSchool" placeholder="Current School"   required />
+          </span>
+
+          <span>
+          <label for="currentMajor">Current Major:</label>
+          <input type="text" id="currentMajor" name="currentMajor" placeholder="Current Major" required />
+          </span>
+
+         <span>
+          <label for="desiredMajor">Desired Major:</label>
+          <input type="text" id="desiredMajor" name="desiredMajor" placeholder="Desired Major" required />
+         </span>
+
+          <span>
+            <label for="startingSemester">Starting Semester:</label>
+            <input type="month" id="startingSemester" name="startingSemester" required />
+          </span>
+
+          <span>
+            <label for="uploadTranscript">Upload Transcript:</label>
+            <input type="file" id="uploadTranscript" name="uploadTranscript" accept=".pdf,.doc,.docx" required />
+          </span>
+
+          <button type="submit">Submit Transfer Request</button>
+        </form>
+      </fieldset>
+      </div>
+      
+    </div>
   </body>
 </html>
