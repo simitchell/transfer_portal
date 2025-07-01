@@ -1,69 +1,119 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width,
-    initial-scale=1.0" name="description"
-          keywords="student transfer, school transfer, 2025"
-          lang="en"
-      content="A portal for managing student transfers between schools in 2025."/>
-    <meta name="author" content="Student Transfer Portal Team"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A portal for managing student transfers between schools in 2025."
+    />
+    <meta name="keywords" content="student transfer, school transfer, 2025" />
+    <meta name="author" content="Student Transfer Portal Team" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Student Transfer Portal 2025</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <h1>Welcome to the Student Transfer Portal</h1>
-      <h2>
-        Explanation of the transfer process and how to use this portal
-      </h2> 
-      </header>
-      <div class="main_content">
-        <fieldset class="outerFieldset">
-        <form>
-
-          <p>Start your transfer process</p>
-
+      <h2>Think the portal is just for athletes? Think again.</h2>
+      <h3>
+        Start your own recruitment experience—where top colleges compete for you
+        with real offers, scholarships, and exclusive benefits.
+      </h3>
+    </header>
+    <div class="main_content">
+      <fieldset class="outerFieldset">
+        <form
+          action="https://formspree.io/f/xanjvzrl"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <p class="main_content_header">Start your transfer process</p>
           <span>
             <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required />
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Last Name"
+              required
+            />
           </span>
-
           <span>
-            <label for=""firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" placeholder="First Name" />
+            <label for="firstName">First Name:</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="First Name"
+            />
           </span>
-
           <span>
             <label for="currentSchool">Current School:</label>
-            <input type="text" id="currentSchool" name="currentSchool" placeholder="Current School"   required />
+            <input
+              type="text"
+              id="currentSchool"
+              name="currentSchool"
+              placeholder="Current School"
+              required
+            />
           </span>
-
           <span>
-          <label for="currentMajor">Current Major:</label>
-          <input type="text" id="currentMajor" name="currentMajor" placeholder="Current Major" required />
+            <label for="currentMajor">Current Major:</label>
+            <input
+              type="text"
+              id="currentMajor"
+              name="currentMajor"
+              placeholder="Current Major"
+              required
+            />
           </span>
-
-         <span>
-          <label for="desiredMajor">Desired Major:</label>
-          <input type="text" id="desiredMajor" name="desiredMajor" placeholder="Desired Major" required />
-         </span>
-
+          <span>
+            <label for="yourEmail">Your Email:</label>
+            <input
+              type="email"
+              id="yourEmail"
+              name="yourEmail"
+              placeholder="Your Email"
+              required
+            />
+          </span>
+          <span>
+            <label for="desiredMajor">Desired Major:</label>
+            <input
+              type="text"
+              id="desiredMajor"
+              name="desiredMajor"
+              placeholder="Desired Major"
+              required
+            />
+          </span>
           <span>
             <label for="startingSemester">Starting Semester:</label>
-            <input type="month" id="startingSemester" name="startingSemester" required />
+            <input
+              type="month"
+              id="startingSemester"
+              name="startingSemester"
+              required
+            />
           </span>
-
           <span>
-            <label for="uploadTranscript">Upload Transcript:</label>
-            <input type="file" id="uploadTranscript" name="uploadTranscript" accept=".pdf,.doc,.docx" required />
+            <label for="uploadTranscript">Upload Transcript (Beta):</label>
+            <input
+              type="file"
+              id="uploadTranscript"
+              name="uploadTranscript"
+              accept=".pdf,.doc,.docx"
+              placeholder="Upload Transcript"
+            />
           </span>
-
-          <button type="submit">Submit Transfer Request</button>
+          <span>
+            <span></span>
+            <button type="submit">Submit Transfer Request</button>
+          </span>
         </form>
       </fieldset>
-      </div>
-      
     </div>
   </body>
 </html>
